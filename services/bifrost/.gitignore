@@ -1,8 +1,0 @@
-data/
-cache/
-logs/
-config.db
-logs.db
-config.json
-*.db
-*.db-*

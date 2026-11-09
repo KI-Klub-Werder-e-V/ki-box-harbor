@@ -1,4 +1,0 @@
-services:
-  aider:
-    volumes:
-      - ./services/aider/configs/aider.airllm.yml:/home/appuser/.aider/airllm.yml

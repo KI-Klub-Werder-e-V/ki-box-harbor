@@ -1,5 +1,0 @@
-services:
-  plandex:
-    environment:
-      - OPENAI_API_KEY=sk-omlx
-      - OPENAI_API_BASE=http://omlx:8080/v1

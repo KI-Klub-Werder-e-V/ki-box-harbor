@@ -1,4 +1,0 @@
-services:
-  chatnio:
-    volumes:
-      - ./services/chatnio/config/config.prismml.yml:/configs/config.prismml.yml

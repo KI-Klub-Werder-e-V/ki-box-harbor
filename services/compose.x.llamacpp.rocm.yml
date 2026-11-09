@@ -1,6 +1,0 @@
-services:
-  llamacpp:
-    image: ${HARBOR_LLAMACPP_IMAGE_ROCM}
-    devices:
-      - /dev/kfd
-      - /dev/dri

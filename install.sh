@@ -11,7 +11,7 @@ if [ -z "${BASH_VERSION:-}" ]; then
   fi
   _current_shell=$(ps -p $$ -o comm= 2>/dev/null || echo "unknown shell")
   echo "Error: Harbor install requires bash, but is running under ${_current_shell}." >&2
-  echo "Please run:  curl -fsSL https://raw.githubusercontent.com/av/harbor/main/install.sh | bash" >&2
+  echo "Please run:  curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash" >&2
   echo "         or: bash install.sh" >&2
   exit 1
 fi
@@ -19,7 +19,7 @@ fi
 set -e
 
 # This is an installation script for the Harbor project.
-# See https://github.com/av/harbor for more information.
+# See https://github.com/KI-Klub-Werder-e-V/ki-box-harbor for more information.
 
 # ========================================
 
@@ -31,9 +31,9 @@ HARBOR_INSTALL_PATH="${HARBOR_INSTALL_PATH:-${HARBOR_HOME:-${HOME}/.harbor}}"
 # ("$HARBOR_INSTALL_PATH.lock") to land inside the install directory,
 # where rm -rf during source-path install can delete the active lock.
 HARBOR_INSTALL_PATH="${HARBOR_INSTALL_PATH%/}"
-HARBOR_REPO_URL="${HARBOR_REPO_URL:-https://github.com/av/harbor.git}"
-HARBOR_RELEASE_URL="${HARBOR_RELEASE_URL:-https://api.github.com/repos/av/harbor/releases/latest}"
-HARBOR_REQUIREMENTS_URL="${HARBOR_REQUIREMENTS_URL:-https://raw.githubusercontent.com/av/harbor/refs/heads/main/requirements.sh}"
+HARBOR_REPO_URL="${HARBOR_REPO_URL:-https://github.com/KI-Klub-Werder-e-V/ki-box-harbor.git}"
+HARBOR_RELEASE_URL="${HARBOR_RELEASE_URL:-https://api.github.com/repos/KI-Klub-Werder-e-V/ki-box-harbor/releases/latest}"
+HARBOR_REQUIREMENTS_URL="${HARBOR_REQUIREMENTS_URL:-https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/refs/heads/main/requirements.sh}"
 HARBOR_REQUIREMENTS_PATH="${HARBOR_REQUIREMENTS_PATH:-}"
 HARBOR_INSTALL_SOURCE_PATH="${HARBOR_INSTALL_SOURCE_PATH:-}"
 HARBOR_VERSION="${HARBOR_INSTALL_VERSION:-}"
@@ -318,7 +318,7 @@ install_or_update_project() {
         echo "Possible causes:" >&2
         echo "  - '$HARBOR_VERSION' is not a valid tag or branch name" >&2
         echo "  - Network error prevented fetching from the remote" >&2
-        echo "  Check available versions: https://github.com/av/harbor/releases" >&2
+        echo "  Check available versions: https://github.com/KI-Klub-Werder-e-V/ki-box-harbor/releases" >&2
         echo "Your override.env customizations have been restored." >&2
         exit 1
       fi
@@ -541,7 +541,7 @@ main() {
     echo "  - No internet connection or DNS failure" >&2
     echo "  - GitHub API rate limit exceeded (60 requests/hour for unauthenticated users)" >&2
     echo "To specify a version manually: $0 --version v0.4.19" >&2
-    echo "Available versions: https://github.com/av/harbor/releases" >&2
+    echo "Available versions: https://github.com/KI-Klub-Werder-e-V/ki-box-harbor/releases" >&2
     exit 1
   else
     echo "Resolved Harbor version: $HARBOR_VERSION"

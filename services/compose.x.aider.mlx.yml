@@ -1,4 +1,0 @@
-services:
-  aider:
-    volumes:
-      - ./services/aider/configs/aider.mlx.yml:/home/appuser/.aider/mlx.yml

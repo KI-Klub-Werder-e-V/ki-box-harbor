@@ -1,4 +1,0 @@
-services:
-  litellm:
-    volumes:
-      - ./services/litellm/litellm.prismml.yaml:/app/litellm/prismml.yaml

@@ -1,0 +1,22 @@
+KI-Box Harbor
+Copyright 2026 KI Klub Werder e.V.
+
+This product is a modified version of Harbor (https://github.com/av/harbor),
+licensed under the Apache License, Version 2.0. Forked from Harbor v0.5.19.
+
+Changes made by KI Klub Werder e.V. (November 2026):
+
+- Removed all services except Ollama and Open WebUI, and removed the desktop
+  app, Boost, documentation, tests, demo scripts, the Windows installer,
+  GPU variants and repository tooling.
+- install.sh, harbor.sh: repository and release URLs point to this fork.
+- profiles/default.env: default services are webui and ollama; the fixed
+  Open WebUI secret is removed; image versions are pinned; log level INFO;
+  interface name "KI-Box"; default models bge-m3 and gemma4:e4b-it-qat.
+- services/compose.ollama.yml: Ollama port binds to 127.0.0.1 only.
+- services/ollama/override.env: context length, parallelism and loaded
+  models reduced for 16 GB RAM.
+- services/webui/override.env: persisted generated secret, German locale,
+  Ollama embeddings with bge-m3, admin chat access off, new users pending.
+- README.md, README.en.md, NOTICE, llms.txt and CITATION.cff
+  added or replaced.

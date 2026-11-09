@@ -1,4 +1,0 @@
-services:
-  chatnio:
-    volumes:
-      - ./services/chatnio/config/config.llamacpp.yml:/configs/config.llamacpp.yml

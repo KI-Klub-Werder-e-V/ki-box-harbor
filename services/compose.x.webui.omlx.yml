@@ -1,4 +1,0 @@
-services:
-  webui:
-    volumes:
-      - ./services/webui/configs/config.omlx.json:/app/configs/config.omlx.json

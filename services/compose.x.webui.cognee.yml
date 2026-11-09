@@ -1,7 +1,0 @@
-services:
-  webui:
-    volumes:
-      - ./services/webui/configs/config.cognee.json:/app/configs/config.cognee.json
-    depends_on:
-      cognee-mcp:
-        condition: service_healthy

@@ -1,2 +1,0 @@
-envVars:
-  SEARXNG_QUERY_URL: http://searxng:8080/search?q=<query>

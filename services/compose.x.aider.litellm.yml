@@ -1,4 +1,0 @@
-services:
-  aider:
-    volumes:
-      - ./services/aider/configs/aider.litellm.yml:/home/appuser/.aider/litellm.yml

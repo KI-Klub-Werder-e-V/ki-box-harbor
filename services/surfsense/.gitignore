@@ -1,7 +1,0 @@
-postgres/
-redis/
-zero/
-shared_tmp/
-cache/
-.hf-cache/
-configs/global_llm_config.generated.yaml

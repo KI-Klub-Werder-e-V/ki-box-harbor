@@ -1,5 +1,0 @@
-services:
-  lobechat:
-    environment:
-      - OPENAI_PROXY_URL=http://prismml:8080/v1
-      - OPENAI_API_KEY=sk-prismml

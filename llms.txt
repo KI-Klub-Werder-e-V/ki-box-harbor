@@ -1,0 +1,16 @@
+# KI-Box Harbor
+
+> KI-Box Harbor is a stripped-down fork of Harbor (av/harbor) that runs a private AI chat with German document search on a Linux PC with 16 GB RAM, no GPU and an older CPU. It keeps only Ollama 0.40.15 and Open WebUI v0.13.3, uses gemma4:e4b-it-qat for chat and bge-m3 for embeddings, and is Apache-2.0. Status as of 9 November 2026: configuration checked, not yet run on real 16 GB hardware.
+
+Install: `curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash`, then `harbor up`. Chat runs on port 33801; the first registered account becomes admin. A project of KI Klub Werder e.V., a non-profit in Werder (Havel), Germany.
+
+## Docs
+
+- [README (Deutsch)](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor/blob/main/README.md): Installation, Befehle, Änderungen gegenüber Harbor, FAQ
+- [README (English)](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor/blob/main/README.en.md): Install, changes from Harbor, FAQ
+- [NOTICE](https://github.com/KI-Klub-Werder-e-V/ki-box-harbor/blob/main/NOTICE): Every change made to Harbor
+
+## Optional
+
+- [KI-Box specification](https://github.com/KI-Klub-Werder-e-V/ki-box): The umbrella project and roadmap
+- [Harbor](https://github.com/av/harbor): The full upstream toolkit with 150+ services

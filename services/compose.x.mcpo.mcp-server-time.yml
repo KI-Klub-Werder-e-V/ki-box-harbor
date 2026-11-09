@@ -1,4 +1,0 @@
-services:
-  mcpo:
-    volumes:
-      - ./services/mcpo/configs/mcpo.mcp-server-time.json:/app/configs/mcpo.mcp-server-time.json

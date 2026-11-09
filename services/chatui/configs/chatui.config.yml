@@ -1,3 +1,0 @@
-# This is the base config where everything else will be merged
-envVars:
-  MONGODB_URL: mongodb://chatui-db:27017

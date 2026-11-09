@@ -1,4 +1,0 @@
-services:
-  sim:
-    environment:
-      - OLLAMA_URL=${HARBOR_OLLAMA_INTERNAL_URL}

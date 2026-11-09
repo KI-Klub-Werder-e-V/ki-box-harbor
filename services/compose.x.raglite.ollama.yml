@@ -1,4 +1,0 @@
-services:
-  raglite:
-    environment:
-      - OLLAMA_API_BASE=${HARBOR_OLLAMA_INTERNAL_URL}

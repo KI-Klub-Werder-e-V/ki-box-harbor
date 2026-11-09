@@ -1,5 +1,0 @@
-services:
-  llamacpp:
-    build:
-      dockerfile: .devops/rocm.Dockerfile
-      target: server

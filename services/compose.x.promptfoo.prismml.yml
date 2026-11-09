@@ -1,5 +1,0 @@
-services:
-  promptfoo:
-    environment:
-      - OPENAI_BASE_URL=http://prismml:8080/v1
-      - OPENAI_API_KEY=sk-prismml

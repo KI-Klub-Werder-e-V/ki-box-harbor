@@ -1,7 +1,0 @@
-services:
-  opint:
-    entrypoint: >
-      interpreter
-        --api_base http://omlx:8080/v1
-        --api_key sk-omlx
-        ${HARBOR_OPINT_CMD}

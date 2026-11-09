@@ -1,5 +1,0 @@
-services:
-  sqlchat:
-    environment:
-      - OPENAI_API_ENDPOINT=http://llamacpp:8080/v1
-      - OPENAI_API_KEY=sk-llamacpp

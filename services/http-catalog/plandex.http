@@ -1,5 +1,0 @@
-@host = http://localhost:33941
-
-###
-
-curl {{host}}/health

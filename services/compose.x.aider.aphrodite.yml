@@ -1,4 +1,0 @@
-services:
-  aider:
-    volumes:
-      - ./services/aider/configs/aider.aphrodite.yml:/home/appuser/.aider/aphrodite.yml

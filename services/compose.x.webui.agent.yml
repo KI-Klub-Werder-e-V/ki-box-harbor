@@ -1,4 +1,0 @@
-services:
-  webui:
-    volumes:
-      - ./services/webui/configs/config.agent.json:/app/configs/config.agent.json

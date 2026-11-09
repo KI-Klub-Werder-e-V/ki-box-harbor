@@ -1,4 +1,0 @@
-services:
-  aider:
-    volumes:
-      - ./services/aider/configs/aider.sglang.yml:/home/appuser/.aider/sglang.yml

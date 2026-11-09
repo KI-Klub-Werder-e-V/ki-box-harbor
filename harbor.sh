@@ -725,7 +725,7 @@ run_harbor_doctor() {
     if [ -d "$harbor_home" ] && [ ! -d "$harbor_home/.git" ]; then
         log_warn "${nok} Harbor home is not a git repository ($harbor_home/.git not found)."
         log_warn "  'harbor update' will not work. If you installed via --source-path,"
-        log_warn "  reinstall with: curl -fsSL https://raw.githubusercontent.com/av/harbor/main/install.sh | bash"
+        log_warn "  reinstall with: curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash"
     fi
 
     if $check_mode; then
@@ -858,7 +858,7 @@ run_harbor_doctor() {
         log_info "${ok} Default profile exists and is readable"
     else
         log_error "${nok} Default profile is missing or not readable at: $default_profile"
-        log_error "  This usually means the Harbor installation is incomplete. Try reinstalling: curl -fsSL https://raw.githubusercontent.com/av/harbor/main/install.sh | bash"
+        log_error "  This usually means the Harbor installation is incomplete. Try reinstalling: curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash"
         has_errors=true
         has_critical=true
     fi
@@ -4472,7 +4472,7 @@ link_cli() {
     if [[ ! -f "$script_path" ]]; then
         log_error "Source script not found: $script_path"
         log_error "The Harbor installation may be corrupted. Reinstall with:"
-        log_error "  curl -fsSL https://raw.githubusercontent.com/av/harbor/main/install.sh | bash"
+        log_error "  curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash"
         return 1
     fi
 
@@ -8662,7 +8662,7 @@ update_harbor() {
     if [ ! -d "$harbor_home/.git" ]; then
         log_error "Harbor home ($harbor_home) is not a git repository."
         log_error "This can happen if Harbor was installed via --source-path (tar copy)."
-        log_error "Reinstall with: curl -fsSL https://raw.githubusercontent.com/av/harbor/main/install.sh | bash"
+        log_error "Reinstall with: curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash"
         return 1
     fi
 
@@ -8803,7 +8803,7 @@ update_harbor() {
             # Italian, German, etc.)
             if ! git rev-parse "tags/$harbor_version" >/dev/null 2>&1; then
                 log_error "Version tag does not exist locally."
-                log_error "Check available versions at https://github.com/av/harbor/releases"
+                log_error "Check available versions at https://github.com/KI-Klub-Werder-e-V/ki-box-harbor/releases"
             else
                 log_error "Local or untracked file changes conflict with the update."
                 log_error "Run 'git status' in $harbor_home to see which files are affected."
@@ -12708,7 +12708,7 @@ run_modularmax_command() {
 
 # Globals
 version="0.5.19"
-harbor_release_url="https://api.github.com/repos/av/harbor/releases/latest"
+harbor_release_url="https://api.github.com/repos/KI-Klub-Werder-e-V/ki-box-harbor/releases/latest"
 delimiter="|"
 scramble_exit_code=42
 # Portable readlink -f: resolve symlinks on both GNU (Linux) and BSD (macOS).

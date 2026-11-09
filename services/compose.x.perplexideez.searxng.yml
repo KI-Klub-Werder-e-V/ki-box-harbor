@@ -1,5 +1,0 @@
-services:
-  # The app container — "perplexideez" is the nginx proxy and ignores these vars
-  perplexideez-service:
-    environment:
-      - SEARXNG_URL=${HARBOR_SEARXNG_INTERNAL_URL}

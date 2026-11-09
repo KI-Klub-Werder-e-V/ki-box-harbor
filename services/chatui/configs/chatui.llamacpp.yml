@@ -1,8 +1,0 @@
-envVars:
-  MODELS:
-    - name: llamacpp
-      id: llamacpp
-      endpoints:
-        - type: openai
-          baseURL: http://llamacpp:8080/v1
-          apiKey: sk-llamacpp

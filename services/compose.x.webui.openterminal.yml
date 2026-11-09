@@ -1,6 +1,0 @@
-services:
-  webui:
-    depends_on:
-      - openterminal
-    volumes:
-      - ./services/webui/configs/config.openterminal.json:/app/configs/config.openterminal.json

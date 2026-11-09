@@ -1,8 +1,0 @@
-envVars:
-  MODELS:
-    - name: tabbyapi
-      id: tabbyapi
-      endpoints:
-        - type: openai
-          baseURL: http://tabbyapi:5000/v1
-          apiKey: "${HARBOR_TABBYAPI_ADMIN_KEY}"

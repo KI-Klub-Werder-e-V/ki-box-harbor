@@ -1,9 +1,0 @@
-services:
-  mi:
-    depends_on:
-      prismml:
-        condition: service_healthy
-    environment:
-      - OPENAI_BASE_URL=http://prismml:8080
-      - OPENAI_API_KEY=sk-prismml
-      - MODEL=${HARBOR_MI_PRISMML_MODEL}

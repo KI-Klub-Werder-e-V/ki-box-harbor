@@ -1,7 +1,0 @@
-services:
-  drawio:
-    environment:
-      - AI_PROVIDER=ollama
-      # next-ai-draw-io uses ollama-ai-provider (createOllama), which expects
-      # the native Ollama API root (…/api), not the OpenAI-compatible /v1.
-      - OLLAMA_BASE_URL=${HARBOR_OLLAMA_INTERNAL_URL}/api

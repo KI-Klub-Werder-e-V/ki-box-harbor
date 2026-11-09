@@ -1,5 +1,0 @@
-services:
-  astrbot:
-    environment:
-      # Configure in WebUI: http://omlx:8080/v1
-      - HARBOR_ASTRBOT_OMLX_ENDPOINT=http://omlx:8080/v1

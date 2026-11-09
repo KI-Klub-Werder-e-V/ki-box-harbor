@@ -1,4 +1,0 @@
-services:
-  chatui:
-    volumes:
-      - ./services/chatui/configs/chatui.prismml.yml:/app/configs/chatui.prismml.yml

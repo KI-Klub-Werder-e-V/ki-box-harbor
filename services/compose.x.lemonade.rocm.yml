@@ -1,7 +1,0 @@
-services:
-  lemonade:
-    devices:
-      - /dev/kfd
-      - /dev/dri
-    environment:
-      - LEMONADE_LLAMACPP=rocm

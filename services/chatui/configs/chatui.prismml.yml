@@ -1,8 +1,0 @@
-envVars:
-  MODELS:
-    - name: prismml
-      id: prismml
-      endpoints:
-        - type: openai
-          baseURL: http://prismml:8080/v1
-          apiKey: sk-prismml

@@ -1,4 +1,0 @@
-services:
-  opencode:
-    environment:
-      - LITELLM_MASTER_KEY=${HARBOR_LITELLM_MASTER_KEY}

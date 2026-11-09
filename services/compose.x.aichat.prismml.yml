@@ -1,4 +1,0 @@
-services:
-  aichat:
-    volumes:
-      - ./services/aichat/configs/aichat.prismml.yml:/app/configs/prismml.yml

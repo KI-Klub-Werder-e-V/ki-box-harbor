@@ -1,8 +1,0 @@
-envVars:
-  MODELS:
-    - name: dmr
-      id: dmr
-      endpoints:
-        - type: openai
-          baseURL: http://dmr:8080/v1
-          apiKey: sk-dmr

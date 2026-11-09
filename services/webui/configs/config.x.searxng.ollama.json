@@ -1,9 +1,0 @@
-{
-	"rag": {
-		"embedding_engine": "ollama",
-		"embedding_model": "nomic-embed-text:latest",
-		"ollama": {
-			"base_url": "${HARBOR_OLLAMA_INTERNAL_URL}"
-		}
-	}
-}

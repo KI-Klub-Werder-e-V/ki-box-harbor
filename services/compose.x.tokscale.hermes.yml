@@ -1,4 +1,0 @@
-services:
-  tokscale:
-    volumes:
-      - ${HARBOR_HERMES_WORKSPACE}/data:/root/.hermes:ro
