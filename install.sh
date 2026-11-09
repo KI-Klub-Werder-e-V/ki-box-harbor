@@ -600,7 +600,7 @@ main() {
   setup_stage "ready"
   echo "Installation complete."
   if [ "${HARBOR_APP:-}" != "1" ]; then
-    echo "Restart your shell, then run 'harbor doctor' to verify your setup."
+    echo "Restart your shell, then run 'kibox doctor' to verify your setup."
   fi
 }
 

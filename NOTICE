@@ -12,7 +12,10 @@ Changes made by KI Klub Werder e.V. (November 2026):
 - install.sh, harbor.sh: repository and release URLs point to this fork.
 - profiles/default.env: default services are webui and ollama; the fixed
   Open WebUI secret is removed; image versions are pinned; log level INFO;
-  interface name "KI-Box"; default models bge-m3 and gemma4:e4b-it-qat.
+  interface name "KI-Box"; default models bge-m3 and gemma4:e4b-it-qat;
+  CLI command name "kibox" instead of "harbor".
+- harbor.sh: bash and zsh completions also register "kibox"; the bash
+  completion file is named "kibox".
 - services/compose.ollama.yml: Ollama port binds to 127.0.0.1 only.
 - services/ollama/override.env: context length, parallelism and loaded
   models reduced for 16 GB RAM.

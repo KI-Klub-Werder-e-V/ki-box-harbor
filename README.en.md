@@ -22,10 +22,12 @@
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash
-harbor up
+kibox up
 ```
 
-The first `harbor up` downloads about 7 GB of models. Chat is then available on your local network at `http://<machine-ip>:33801`.
+The first `kibox up` downloads about 7 GB of models. Chat is then available on your local network at `http://<machine-ip>:33801`.
+
+The command is `kibox` instead of `harbor`; everything in the [Harbor CLI reference](https://github.com/av/harbor/wiki/3.-Harbor-CLI-Reference) works the same with `kibox`, except for removed services.
 
 **Important:** The first account to register becomes admin. Create it right after starting. Later accounts start as pending until an admin approves them.
 
@@ -54,7 +56,7 @@ Harbor ships over 150 services and targets developer desktops. Some defaults are
 
 ### How do I back up my data?
 
-Accounts, chats and documents live in `~/.harbor/services/webui`; models live in `~/.ollama`. Run `harbor down` and back up the first folder, for example with [restic](https://restic.net).
+Accounts, chats and documents live in `~/.harbor/services/webui`; models live in `~/.ollama`. Run `kibox down` and back up the first folder, for example with [restic](https://restic.net).
 
 ## Credits and licence
 

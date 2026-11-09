@@ -22,25 +22,25 @@ Deutsch · [English](README.en.md)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/KI-Klub-Werder-e-V/ki-box-harbor/main/install.sh | bash
-harbor up
+kibox up
 ```
 
-Beim ersten `harbor up` lädt Ollama rund 7 GB Modelle. Danach ist der Chat im lokalen Netz unter `http://<IP-des-Rechners>:33801` erreichbar.
+Beim ersten `kibox up` lädt Ollama rund 7 GB Modelle. Danach ist der Chat im lokalen Netz unter `http://<IP-des-Rechners>:33801` erreichbar.
 
 **Wichtig:** Das erste Konto, das sich registriert, wird Admin. Lege es direkt nach dem Start an. Weitere Konten starten als „ausstehend“ und müssen vom Admin freigeschaltet werden.
 
 ## Wichtige Befehle
 
 ```bash
-harbor up          # starten
-harbor down        # stoppen
-harbor ps          # Status
-harbor logs webui  # Logs der Oberfläche
-harbor update      # auf das neueste Release dieses Forks aktualisieren
-harbor ollama pull qwen3.5:4b   # weiteres Modell laden
+kibox up          # starten
+kibox down        # stoppen
+kibox ps          # Status
+kibox logs webui  # Logs der Oberfläche
+kibox update      # auf das neueste Release dieses Forks aktualisieren
+kibox ollama pull qwen3.5:4b   # weiteres Modell laden
 ```
 
-Die übrigen Befehle beschreibt die [Harbor-CLI-Referenz](https://github.com/av/harbor/wiki/3.-Harbor-CLI-Reference). Befehle für entfernte Dienste funktionieren in diesem Fork nicht.
+Der Befehl heißt `kibox` statt `harbor`. Die übrigen Befehle beschreibt die [Harbor-CLI-Referenz](https://github.com/av/harbor/wiki/3.-Harbor-CLI-Reference); dort einfach `harbor` durch `kibox` ersetzen. Befehle für entfernte Dienste funktionieren in diesem Fork nicht.
 
 ## Was gegenüber Harbor geändert ist
 
@@ -79,7 +79,7 @@ Harbor bringt über 150 Dienste mit und ist für Entwickler-Desktops gebaut. Fü
 
 ### Wie sichere ich meine Daten?
 
-Konten, Chats und Dokumente liegen in `~/.harbor/services/webui`, Modelle in `~/.ollama`. Stoppe den Stack mit `harbor down` und sichere den ersten Ordner, etwa mit [restic](https://restic.net). Modelle lassen sich neu laden. Ein eingebautes Backup ist in der [KI-Box-Spezifikation](https://github.com/KI-Klub-Werder-e-V/ki-box/blob/main/docs/spec.de.md) geplant.
+Konten, Chats und Dokumente liegen in `~/.harbor/services/webui`, Modelle in `~/.ollama`. Stoppe den Stack mit `kibox down` und sichere den ersten Ordner, etwa mit [restic](https://restic.net). Modelle lassen sich neu laden. Ein eingebautes Backup ist in der [KI-Box-Spezifikation](https://github.com/KI-Klub-Werder-e-V/ki-box/blob/main/docs/spec.de.md) geplant.
 
 ### Verlassen Daten den Rechner?
 
