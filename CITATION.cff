@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you refer to this project, please cite it as below."
 title: "KI-Box Harbor: local AI on a 16 GB PC without a GPU"
 abstract: "Stripped-down fork of Harbor that runs Ollama and Open WebUI with German document search on low-end hardware."
-version: 0.5.19-kibox.1
+version: 0.5.19-kibox.2
 date-released: 2026-11-09
 license: Apache-2.0
 repository-code: "https://github.com/KI-Klub-Werder-e-V/ki-box-harbor"
