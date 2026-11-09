@@ -15,7 +15,7 @@ Deutsch · [English](README.en.md)
 | **Modelle** | Chat: `gemma4:e4b-it-qat` (6,1 GB), Embeddings: `bge-m3` (1,2 GB) |
 | **Sprache** | Oberfläche auf Deutsch, Dokumentensuche mit deutschfähigem Embedding |
 | **Für wen** | KI-Enthusiasten, die eine Box zu Hause, im Verein oder im kleinen Betrieb betreiben |
-| **Basis** | Harbor 0.5.19, von 2.541 auf 68 Dateien reduziert |
+| **Basis** | Harbor 0.5.19, von 2.541 auf 67 Dateien reduziert |
 | **Lizenz** | Apache-2.0 (wie Harbor); Open WebUI hat eine eigene Lizenz |
 
 ## Installation

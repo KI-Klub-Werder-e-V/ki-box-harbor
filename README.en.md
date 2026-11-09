@@ -15,7 +15,7 @@
 | **Models** | Chat: `gemma4:e4b-it-qat` (6.1 GB), embeddings: `bge-m3` (1.2 GB) |
 | **Language** | German interface, German-capable embeddings for document search |
 | **Audience** | AI enthusiasts running a box at home, in a club or a small business |
-| **Base** | Harbor 0.5.19, reduced from 2,541 to 68 files |
+| **Base** | Harbor 0.5.19, reduced from 2,541 to 67 files |
 | **Licence** | Apache-2.0 (same as Harbor); Open WebUI has its own licence |
 
 ## Install
